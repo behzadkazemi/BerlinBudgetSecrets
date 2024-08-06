@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom styles */
+.box {
+    @apply bg-night-black text-center p-8 border-4 border-neon-green rounded-lg transform transition-transform hover:scale-105 hover:bg-neon-green hover:text-night-black;
+  }
