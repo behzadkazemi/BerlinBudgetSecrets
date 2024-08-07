@@ -1,16 +1,21 @@
 import React from 'react';
 import './index.css';
+import University from './components/University';
+import { Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="bg-night-black text-white flex justify-center items-center h-screen">
-      <div className="grid grid-cols-2 gap-8">
-        <a href="#" className="box">University</a>
-        <a href="#" className="box">Sightseeing</a>
-        <a href="#" className="box">Entertainment</a>
-        <a href="#" className="box">Accommodation</a>
-      </div>
+    <div className="bg-night-black text-white min-h-screen">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/university" element={<University />} />
+        
+      </Routes>
     </div>
+
+    
   );
 }
 
